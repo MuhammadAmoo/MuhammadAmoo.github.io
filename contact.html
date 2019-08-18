@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Buddy Budget</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+  padding-left: 350px;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+
+
+li a:hover {
+  background-color: #27548f;
+   color: white;
+}
+
+
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #27548f;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  font-size: 18px;
+  
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+input[type=text], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 16%;
+  background-color: #4CAF50;
+  padding: 120px;
+  color: white;
+  padding: 14px 26px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.row4 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.column2 {
+  float: left;
+  width: 20%;
+}
+
+.column3 {
+  float: left;
+  width: 80%;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+    text-align: center;
+  clear: both;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  width:68px;
+  height:65px;
+  color: white;
+}
+
+.fa-twitter {
+  width:68px;
+  height:65px;
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-skype {
+  background: #00aff0;
+   width:68px;
+  height:65px;
+  color: white;
+}
+
+textarea {
+  width: 50%;
+  height: 120px;
+  padding: 12px 18px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 13px;
+  resize: none;
+}
+
+}
+
+
+
+
+</style>
+
+<script>
+function myFunction() {
+  alert("Message sent");
+}
+</script>
+
+<body>
+
+<div class="top">
+<img style="height:120px" src="logo1.png" alt="Italian Trulli">
+</div>
+
+<ul>
+  <li><a style="" class="active" href="index.html">HOME</a></li>
+  <li><a style="" href="about.html">ABOUT</a></li>
+  <li><a style="" href="tool.html">TOOLS</a></li>
+  <li><a style="" href="tip.html">TIPS</a></li>
+  <li><a style="" href="contact.html">CONTACT US</a></li>
+</ul>
+
+<div style="background-color: #d7dde2" class="ban">
+<img  style="height: 250px; width: 70%;" class="center" src="contact1.png" alt="about us">
+</div>
+
+
+<div class="row2">
+   <div class="column3" style="background-color:white; height: 120px">
+    <h2 style="text-align:center; font-size: 20px; padding-top: 15px; padding-left: 260px; text-align: justify; color: #4c4c4d" class="display-1">Email us with any questions or inquiries or call 072-431-299. We would be happy to answer your questions, provide expert advice and help with any finance stress.   </h2>
+	   <h2 style="text-align:center; font-size: 20.5px; padding-left: 460px; text-align: justify; color: #323233" class="display-1">Get in touch so you can start saving.</h2>
+	<hr></hr>
+	</div>
+</div>
+
+<div class="row4" style="background-color:white; height: 570px; text-align:center; align:center" >
+  <form action="/action_page.php" class="was-validated">
+   
+    <label style="font-size: 16px; padding: 5px" class="display-1" for="fname">First Name *</label>
+    <input type="text" id="fname" name="firstname" class="form-control" placeholder="Your name.." required>
+	<div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+	<p><p>
+   
+    <label style="font-size: 16px; padding: 5px" class="display-1" for="lname">Last Name *</label>
+    <input type="text" id="lname" name="lastname" class="form-control" placeholder="Your last name.." required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+    <p><p>
+	
+
+	<label style="padding: 6px; font-size: 16px; padding-left: 37px;" class="display-1" for="email">Email *</label>
+    <input type="text" id="email" name="email" class="form-control" placeholder="Your email address.." required>
+	<div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+	<p><p>
+   
+  
+	 <textarea style="color: #707070" >Enter your message...</textarea>
+	
+  <p><p>
+    <input type="submit" onclick="myFunction()" value="Send Email" style="background-color: #27548f">
+  </form>
+</div>
+
+
+<footer>
+
+<div class="row">
+  <div class="column1" style="background-color:#47494c; height: 150px">
+    <h2 style="color:white">Get in touch</h2>
+     <b href="#" class="fa fa-linkedin"></b>
+	 <b href="https://twitter.com/home?lang=en" class="fa fa-twitter"></b>
+	 <b href="#" class="fa fa-skype"></b>
+  </div>
+  <div class="column1" style="background-color:#696e77; height: 150px">
+    <h2 style="color:white">Did you know..</h2>
+    <h5 style="font-size: 16px; color: #c7d3e5; text-align: center; font-family: Montserrat, sans-serif; padding-right: 60px "> BuddyBudget was founded by CPUT student Muhammad Amoo in 2019. The main focus of this site is not only to improve and manage financial planning of the community, but also to serve as an educational tool.</h5>
+  </div>
+</div>
+</footer>
+
+
+</body>
+</html>

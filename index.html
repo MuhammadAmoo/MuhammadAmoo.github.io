@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Buddy Budget</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+    padding-left: 350px;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  padding-left: 140px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #27548f;
+   color: white;
+}
+
+
+
+/* Style the content */
+.content {
+  background-color: #ddd;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+   position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+    font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 10px;
+  height: 350px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #27548f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  font-size: 18px;
+  
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+    text-align: center;
+  clear: both;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  width:68px;
+  height:65px;
+  color: white;
+}
+
+.fa-twitter {
+  width:68px;
+  height:65px;
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-skype {
+  background: #00aff0;
+   width:68px;
+  height:65px;
+  color: white;
+}
+
+
+}
+
+
+
+
+</style>
+
+<body>
+
+<div class="top">
+<img style="height:120px" src="logo1.png" alt="Italian Trulli">
+</div>
+
+<ul>
+  <li><a style="" class="active" href="#">HOME</a></li>
+  <li><a style="" href="about.html">ABOUT</a></li>
+  <li><a style="" href="tool.html">TOOLS</a></li>
+  <li><a style="" href="tip.html">TIPS</a></li>
+  <li><a style="" href="contact.html">CONTACT US</a></li>
+</ul>
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="one.png" style="width:100%">
+    <div class="text">Home</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="two.png" style="width:100%">
+    <div class="text">Start saving</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="three.png" style="width:100%">
+    <div class="text">Click on "Let's save" below to start saving</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<div class="row">
+  <div class="column" style="background-color:#e8eaed;">
+  
+    <h2 style="font-size:26px">TIPS</h2>
+    <h2 style="font-size:17px; text-align:center">Whether it's cutting down on bills or ditching the morning coffee-grab on the way to work.</h3>
+	<h2 style="font-size:17px;3 text-align:center">Click the link below to read about quick and extremely simple ways to save your money and make it go abit further. </h3>
+	
+	<p></p>
+	<a href="tip.html">Let's save</a>
+  </div>
+  <div class="column" style="background-color:white;">
+    <h2 style="font-size:26px">BUDGET TOOL</h2>
+    <h2 style="font-size:17px, text-align:center">Take control of your finances..</h2>
+	<h2 style="font-size:17px, text-align:center">Try our budgeting tool, a simple yet powerful tool that can be used to understand where your money goes and effortlessly manage your finances.</h2>
+	<a href="tool.html" >Show me more</a>
+  </div>
+  <div class="column" style="background-color:#e8eaed;">
+    <h2 style="font-size:26px">ABOUT US</h2>
+  
+	<h2 style="font-size:17px, text-align:center">There is an extreme lack of knowledge regarding financial amongst the youth and the community as a whole. </h2>
+		<h2 style="font-size:17px, text-align:center">BuddyBudget aims to ensure communities and households increase household savings   </h2>
+
+	<a href="about.html" >Learn more</a>
+  </div>
+</div>
+
+<footer>
+
+<div class="row">
+  <div class="column1" style="background-color:#47494c;">
+    <h2 style="color:white">Get in touch</h2>
+     <b href="#" class="fa fa-linkedin"></b>
+	 <b href="https://twitter.com/home?lang=en" class="fa fa-twitter"></b>
+	 <b href="#" class="fa fa-skype"></b>
+  </div>
+  <div class="column1" style="background-color:#696e77;">
+    <h2 style="color:white">Did you know..</h2>
+    <h5 style="font-size:16px; color: #c7d3e5; text-align: center; font-family: Montserrat, sans-serif; padding-right: 60px "> BuddyBudget was founded by CPUT student Muhammad Amoo in 2019. The main focus of this site is not only to improve and manage financial planning of the community, but also to serve as an educational tool.</h5>
+  </div>
+</div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Buddy Budget</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+  padding-left: 350px;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+
+
+li a:hover {
+  background-color: #27548f;
+   color: white;
+}
+
+
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #27548f;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  font-size: 18px;
+  
+  text-align: center;
+  width: 50%;
+  padding: 10px;
+  height: 400px; /* Should be removed. Only for demonstration */
+}
+
+input[type=text], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 16%;
+  background-color: #4CAF50;
+  padding: 120px;
+  color: white;
+  padding: 14px 26px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.row4 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.column2 {
+  float: left;
+  width: 20%;
+}
+
+.column3 {
+  float: left;
+  width: 80%;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+    text-align: center;
+  clear: both;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  width:68px;
+  height:65px;
+  color: white;
+}
+
+.fa-twitter {
+  width:68px;
+  height:65px;
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-skype {
+  background: #00aff0;
+   width:68px;
+  height:65px;
+  color: white;
+}
+
+textarea {
+  width: 50%;
+  height: 120px;
+  padding: 12px 18px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 13px;
+  resize: none;
+}
+
+}
+
+
+
+
+</style>
+
+
+<script>
+function addE(){
+var a,b,c,d,e;
+a=Number(document.getElementById("shelt").value);
+b=Number(document.getElementById("food").value);
+c=Number(document.getElementById("other").value);
+d=Number(document.getElementById("bill").value);
+
+e= a + b + c + d;
+document.getElementById("answerExp").value= e;
+}
+
+function add(){
+var f,g,h;
+f=Number(document.getElementById("mpay").value);
+g=Number(document.getElementById("mother").value);
+
+h= f + g;
+document.getElementById("answerInc").value= h;
+}
+
+function calcBudget(){
+var i,j,k;
+i=Number(document.getElementById("answerInc").value);
+j=Number(document.getElementById("answerExp").value);
+
+k= i - j;
+document.getElementById("budget").value= "R" + k + ".00";
+}
+</script>
+
+
+<body>
+
+<div class="top">
+<img style="height:120px" src="logo1.png" alt="Italian Trulli">
+</div>
+
+<ul>
+  <li><a style="" class="active" href="index.html">HOME</a></li>
+  <li><a style="" href="about.html">ABOUT</a></li>
+  <li><a style="" href="tool.html">TOOLS</a></li>
+  <li><a style="" href="tip.html">TIPS</a></li>
+  <li><a style="" href="contact.html">CONTACT US</a></li>
+</ul>
+
+
+<div style="background-color: #ffffff" class="ban">
+<img  style="height: 250px; width: 100%;" src="budget.png" alt="about us">
+</div>
+<p>
+
+ <div>
+ <h1 style="font-size: 26px; padding-left:60px; text-align: justify; color: #000000" class="display-1 font-weight-bold" >Budget Calculator</h1>
+ </div>
+ <h2 style="font-size: 22px; padding-left:60px;  padding-right:400px; padding-bottom:4px; text-align: justify; color: #000000" class="display-1">Use our simple budget calculator and take control of your spending.</h2>
+	<br>
+
+
+<div class="row">
+  <div class="column1" style="background-color:#dbe8d1">
+    <h2 style="color:black">Income</h2>
+	<h5 style="color:#969595">(Enter your income below in R)</h5>
+	Monthly pay: <input style="padding-left: 12px" id="mpay"><p><p>
+	Monthly other: <input  style="padding-left: 2px" id="mother"> <p>
+	
+	<br></br>
+	<button onclick="add()">Calculate total Income</button><p>
+	<input id="answerInc" value="R">
+</div>
+
+
+
+  <div class="column1" style="background-color:#e8d1d1">
+    <h2 style="color:black">Monthly Expense</h2>
+	<h5 style="color:#969595">(Enter your expenses below in R)</h5>
+	Shelter: <input id="shelt"><p><p>
+	Bills: <input style="padding-left: 15px" id="bill"><p><p>
+	Food: <input  style="padding-right: 11px" id="food"><p><p>
+	Other: <input  style="padding-left: 10px" id="other"> <p>
+	
+	<br></br>
+	<button onclick="addE()">Calculate total Expense</button><p>
+	<input id="answerExp" value="R">
+  </div>
+</div>
+
+
+<div style="width: 100%; height: 150px; text-align: center; background-color:#e6e5e3">
+<h2 style="color:black; font-size: 26px">Budget Review</h2><p><p>
+	<p><p>
+	<button style="font-size: 18px" onclick="calcBudget()">Under/Over budget:</button><p><p>
+	<input style="font-size: 18px" id="budget" value="R">
+</div>
+
+
+
+<footer>
+
+<div class="row">
+  <div class="column1" style="background-color:#47494c; height: 150px">
+    <h2 style="color:white">Get in touch</h2>
+     <b href="https://www.linkedin.com/in/muhammad-amoo-339759127/" target="blank" class="fa fa-linkedin"></b>
+	 <b href="" class="fa fa-twitter"></b>
+	 <b href="#" class="fa fa-skype"></b>
+  </div>
+  <div class="column1" style="background-color:#696e77; height: 150px">
+    <h2 style="color:white">Did you know..</h2>
+    <h5 style="font-size: 16px; color: #c7d3e5; text-align: center; font-family: Montserrat, sans-serif; padding-right: 60px "> BuddyBudget was founded by CPUT student Muhammad Amoo in 2019. The main focus of this site is not only to improve and manage financial planning of the community, but also to serve as an educational tool.</h5>
+  </div>
+</div>
+</footer>
+
+</body>
+</html>
